@@ -1,0 +1,70 @@
+body{
+    background:rgb(186, 186, 193);
+    font: normal 15pt arial;
+}
+
+article{
+display: flex;
+justify-content: center;
+padding: 20px;
+}
+
+section.sGeral{
+    background-color: rgb(231, 231, 231);
+    padding: 20px 20px 20px 20px;
+    width: 60%;
+    max-width: 600px;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(13, 13, 13, 0.269);;
+}
+
+h1{
+    font: bold 20pt arial;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dEntrada{
+    padding: 10px 10px 10px 0px;
+}
+div.dEntrada p{
+    font: normal 10pt arial;
+    margin: 2px;
+    padding:12px 0px 0px 0px ;
+
+}
+
+.entradaDados{
+    margin: 0px;
+    padding: 0px 10px;
+    width: 80%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.dSaida{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(103, 156, 255);
+    height: 50px;
+    padding: 5px 15px;
+    font: normal 15pt arial;
+    border-radius: 10px;
+    color: white;
+    margin: 10px 0px;
+}
+
+#bCalcular{
+    background-color: rgb(37, 76, 216);
+    color: white;
+    font: bold 20px arial;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 10px 0px;
+
+
+}

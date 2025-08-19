@@ -1,0 +1,54 @@
+body{
+    background:rgb(231, 231, 231);
+    font: normal 15pt arial;
+}
+
+article{
+display: flex;
+justify-content: center;
+padding: 20px;
+}
+
+section.sGeral{
+    display: flex;
+    background-color: rgb(197, 196, 196);
+    padding: 20px 20px 20px 20px;
+    width: 70%;    
+    min-width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(13, 13, 13, 0.269);;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font: bold 20pt arial;
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+    color: rgb(41, 113, 65);
+}
+
+.dFrase{
+    height: 200px;
+    padding: 10px 10px 10px 0px;
+    font: normal 30pt arial;
+    margin: 2px;
+    padding: 0px 0px 0px 0px ;
+
+}
+
+
+
+#bNovaFrase{
+    background-color: rgb(16, 102, 44);
+    color: white;
+    font: bold 20px arial;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px 0px;
+
+
+}

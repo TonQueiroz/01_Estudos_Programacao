@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 005</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário 5</h1>
+
+    <form action="xx.php" method="GET" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="ismas" value="Masc">  <label for="ismas" > Masculino</label><br><!-- O name para os radio tem que ser os mesmos (os ids são diferentes)-->
+                <input type="radio" name="sexo" id="isfem" value="Femi" checked> <label for="isfem"> Feminino </label>              
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>            
+            <p>
+                <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut" >Futebol</label> <br> 
+                <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tenis</label> <br>
+                <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Volei</label> <br>
+                <input type="checkbox" name="escan" id="iescan"checked> <label for="iescan">Canoagem</label> <br>
+            </p>            
+            <p>
+                <input type="submit" value="Enviar"> <input type="reset" value="limpar">
+            </p>            
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+@charset "utf8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;/*
+    Uso de Variaveis em fonte
+    */
+    
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+        /*
+        font-family: 'Passion One', cursive;
+        font-family: 'Sriracha', cursive;
+        */
+
+        body{
+            margin: 0;
+            background-color: lightgray;
+            size:100vh;  /* O vh (viewport height) ou VW (viewport width) é a porcentagem da en relação a larguura da viewport */
+            font-family: var(--fonte1);
+        }
+
+        header{
+            
+            background-color: black;
+            color: white;                 
+            text-align: center;
+        }
+
+        header > h1{
+            margin:auto;
+            max-width: 100%;                        
+            font-size: 13vw;    /* VW (viewport width) ta,bém adapta a o tamanho do texto a % da largura do site, mas o certo é usar media query*/
+            font-variant: small-caps;
+            padding: 50px;
+            font-family: var(--fonte2);
+            
+
+        }
+
+        header p{
+            font-size: 15px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            margin:0;
+            padding-bottom:50px;
+        }
+
+        section{
+            
+            padding:0px;
+            background-color: white;            
+            margin: 0;
+            font-family: var(--fonte3);
+            padding-TOP: 10vh;
+            padding-bottom: 10vh;
+            
+            
+            
+
+        }
+            
+        section>p{
+            
+            display: inline-block;/* Ao inves de usar max-width: 280px; Transformou o parágrafo em um inline block que se adapta ao tamanho do conteudo para não pegar a largura total a viewport*/            
+            font-size: 3vw; /* VW (viewport width) ta,bém adapta a o tamanho do texto a % da largura do site, mas o certo é usar media query*/                   
+            margin-LEFT: 40px;
+            padding: 5px;
+            line-height: 2em;;
+            
+            
+        }
+
+        p.fundotrasnp{
+            background-color: rgba(6, 6, 6, 0.523);
+            color: white;
+            display: inline-block;
+        }
+
+        section#semback1{
+            background-color: gray;            
+            background-image: url(imagens/background001.jpg);
+            background-position:right center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-shadow: 1px 1px 0 black;
+            box-shadow: inset 5px 5px 13px 5px rgba(0, 0, 0, 0.555); /* inset sombra interna */
+
+        }
+
+        section#semback2{
+            background-color: gray;            
+            background-image: url(imagens/background002.jpg);
+            background-position:center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            box-shadow: inset 5px 5px 13px 5px rgba(0, 0, 0, 0.555); /* inset sombra interna */
+        }
+
+
+        .link{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+
+
+        }
+
+        .link:visited {
+            
+            text-decoration: none;
+
+            
+
+
+        }
+
+        .link:hover{
+            text-decoration: underline;
+            color: rgb(41, 89, 41);
+
+        }
+
+
+
+
+        footer{
+            background-color: black;
+            width:100%;
+            
+            
+            
+            
+        }
+
+        footer>p{
+            font-size: 15px;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align:center;            
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 10px;
+        }

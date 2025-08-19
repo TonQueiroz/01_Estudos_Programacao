@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+
+<body>
+
+    <h1>Imagens Dinamicas</h1>
+    <h2>A imagem que vai ser carregada irá se adaptar a largura da janela</h2>
+    <p>Aumente e diminua a largura da janela para ver a imagem alterando</p>
+
+    <picture>
+
+        <source media="(max-width:750px)" srcset="Imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width:1050px)" srcset="Imagens/foto-m.png" type="image/png">
+
+        <img src="Imagens/foto-g.png" alt=" Imagem Diâmica">
+    </picture>
+    <br>
+
+    <audio src="Media/Drop the Tapes - TrackTribe.mp3" controls ></audio>
+
+    <!--- Modo diferente de Colocar Áudio útilizando Redundancia --->
+
+    <audio preload="metadata" controls  loop>
+        <source src="Media/Drop the Tapes - TrackTribe.mp3" type="audio/mpeg">
+        <source src="Media/Drop the Tapes - TrackTribe.ogg" type="audio/ogg">
+
+        <p>Seu navegador n tem suporte para ouvir o áudio por favor baixe <a href="http://youtube.com/studio">aqui</a>
+        </p>
+    </audio>
+    <br>
+
+    <video width="600" poster="Imagens/foto-m.png" controls     >
+        <source src="Media/pexels-iconcom-1191884-1280x720-50fps.mp4" type="video/mp4">
+        <source src="Media/pexels-leonardo-dourado-16754886-540x960-30fps.mp4" type="video/mp4">
+        <p>Sinto muito não podemos reproduzir seu vídeo.</p>
+           </video>
+
+           <p>
+            <iframe width="100" height="500" src="https://www.youtube.com/embed/h19pHear43g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+            </iframe></p>
+
+
+</body>
+
+</html>

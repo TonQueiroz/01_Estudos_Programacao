@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de conteineres</title>
+    <style>
+        section#container{
+            background-color: blueviolet;
+            
+            height: 500px;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+
+            }
+
+        article#conteudo{
+           
+            background-color: yellowgreen;
+            height: 50%;
+            width:50%;
+            position: absolute;
+            left:50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        body{
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="container">
+       
+        <article id="conteudo">
+           
+
+        </article>
+
+    </section>
+
+
+</body>
+</html>

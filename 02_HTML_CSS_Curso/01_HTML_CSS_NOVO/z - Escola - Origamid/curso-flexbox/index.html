@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos Flexbox
+    </title>
+
+    <style>
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        section.blk{
+            border: 1px solid black;
+            width: 70vw;
+            margin: auto;
+            
+        }
+
+        
+        section div {
+            background-color: tomato;
+            padding: 4px;
+            text-align: center;
+            font-size: 2em;
+            margin: 2px;
+            border: 1px solid black;
+            
+            
+        }
+
+        section.flx{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 800px;
+
+            
+           
+
+            align-content:  space-between;
+            
+
+
+            
+            border: 1px solid black;
+            width: 70vw;
+            margin: auto;
+            
+        }
+
+            .item{
+                flex-grow: 1;
+            }
+
+
+
+    </style>
+
+</head>
+<body>
+<h1>Display: block;</h1>
+<section class="blk">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+</section>
+
+
+<h1>Display: Flex;</h1>
+<section class="flx">
+    <div class="item">123 <br>45</div>
+    <div class="item">234-=--   0000----56</div>
+    <div class="item">34567</div>
+    <div class="item">45678</div>
+    <div class="item">57789</div>
+    <div class="item">6891   000000</div>
+    <div class="item">78......3.........91011</div>
+</section>
+
+    
+</body>
+</html>

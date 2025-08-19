@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Colocando imagens de fundo</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: aliceblue;
+            width: 35%;
+        }
+
+    body{
+        background-color: lightgray;
+        background-image: url(imagens/pattern004.png);
+        background-repeat: no-repeat;
+        background-position: center-center;
+        background-size: contain ;
+    }
+
+    div.quadrado{
+        display: inline-block;
+        margin: 5px;
+        width: 300px;
+        height: 300px;
+        background-color: grey;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    
+    div#q1{
+        background-color: aqua;
+    
+    }
+    div#q2{
+        background-image: linear-gradient( 0deg, yellow, orange 50%);
+    }
+    
+    div#q3{
+        background-image: url(imagens/wallpaper002.jpg);
+        
+    
+    }
+    
+    div#fora{ 
+        height: 96vh;
+        background-color: blueviolet;
+        position: relative;
+    
+        
+    }
+    
+    div#dentro{
+        height: 200px;
+        width: 300px;
+        background-color: yellow;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+    }
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Inserindo imagens no fundo</h1>
+    <body>
+        <main>
+        <div class="quadrado" id="q1"> </div>
+        <div class="quadrado" id="q2"></div>
+        <div class="quadrado" id="q3"></div>
+        </main>
+        
+
+        <div id="fora">
+            <div id="dentro">               
+            </div>
+        </div>
+        
+    </body>
+</body>
+</html>

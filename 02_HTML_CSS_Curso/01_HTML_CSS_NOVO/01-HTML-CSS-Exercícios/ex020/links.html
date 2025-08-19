@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        
+        }
+        p{
+            font-size: 1.25em;
+            font-family: 'Arial Narrow Bold', sans-serif ;
+            font-weight: normal;
+        }
+        .destaque{
+            color: darkred;
+            text-decoration: underline ;
+        }
+
+        a{
+            color: rgb(10, 10, 10);
+            text-decoration: none;
+        }
+
+        a:visited{ /*Pseudo Classe em Elemento*/
+            color: blueviolet;
+        }        
+
+        a::after{ /*Pseudoelemento em Elemento*/
+            content: "[Link]";
+        }
+
+        .especial:hover{ /*PseudoClasse em Classe*/
+            text-decoration: underline;
+        }
+
+        .especial::after{ /*Pseudoelemento em Classe*/
+            background-color: rgb(109, 108, 108); 
+            
+        
+        }
+        #ident:checked /*PseudoClasse em Id em Classe*/
+        {
+            color: pink ;
+        }/*Pseudoelemento e Pseudoclasses podem ser aplicadas 
+        em Elementos(a/p/h1), Classes (:) e em Identificadores (#)*/
+
+    </style>
+
+</head>
+<h1>Personalizando Links</h1>
+<ul id="teste">
+    <li><a href="https://youtube.com" target="_blank" class="especial">Youtube</a></li>
+    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+    <li id="ident"><a href="https://facebook.com" target="_blank">Facebook</a></li>
+</ul>
+<hr>
+
+<p>
+    no <span class="destaque">html</span> para definir  identificaores e Classes: <br>
+    <span class="destaque">id </span>    =  (Identificadores ) <br>
+    <span class="destaque">Class</span>  =  (Classes)      
+</p>
+<hr>
+<p>
+    Usa no <span class="destaque" >CSS</span> no Style ou nas folhas de estilo para <br> aplicar estilos  <br> 
+    # = Identificadores <br>
+    . = (Classes)      
+    
+</p>
+<hr>
+<p>
+    Para aplicar em Elementos(a/p/h1), Classes (:)  <br> ou Identificadores (#) :<br>
+
+    <span class="destaque">:</span>  = Pseudoclasses<br>
+    <span class="destaque">::</span> = Pseudoelementos 
+
+</p>
+
+<body>
+    
+</body>
+</html>

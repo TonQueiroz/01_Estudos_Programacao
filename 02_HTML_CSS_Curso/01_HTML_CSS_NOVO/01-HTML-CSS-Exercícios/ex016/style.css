@@ -1,0 +1,45 @@
+@charset "utf-8"; /*Regra de caracteres para não ter problemas de compatibilidade*/
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+
+
+
+
+*{
+    /*height: 100%;*/
+    font-family: sans-serif;
+}
+p{
+    text-align: justify;
+    font-family: 'Slabo 27px', serif;
+}
+body{
+    background-image: linear-gradient(to right, #232625,#BFBFB8);
+}
+
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius:  30px;
+    box-shadow: 10px 20px 10px #4e5351;
+    
+}
+
+h1{
+    color: #35403A;
+    text-shadow: 1px 1px 0px rgb(120, 120, 120);
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 100;
+
+}
+
+h2{
+    color: #4C594F;
+    font-family: 'Kablammo', Times, serif;
+    
+}

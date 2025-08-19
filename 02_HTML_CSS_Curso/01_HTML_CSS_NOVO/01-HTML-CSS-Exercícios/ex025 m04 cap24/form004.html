@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumenFormulário 4</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário 4</h1>
+
+    <form action=""method="get" autocomplete="on"> 
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="iemail"> Email: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required> </p>
+                <label for="itel"> Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(|d{2}\)\d{4,5}-\{d{4}$" placeholder="(xx)xxxx-xxxx" > <!-- "^\(|d{2}\)\d{4,5}-\{d{4}$" é uma expressão regular para (19)99959-2428 Que só pode esse padrão de digitos Estudar RegEx (expressões Regulares) -->
+                <p>
+                <input type="submit"> <input type="reset">
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>

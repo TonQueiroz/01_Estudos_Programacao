@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queri 2</title>
+    
+    <style>
+        /* Declarações Gerais!*/
+
+        *{
+    margin: 0px;
+    padding: 0px;
+    }
+
+    html,body{
+        width: 100vw;
+        height: 100vh;
+        background-color:  blue;
+        }
+
+    h1 {color: white;
+    text-shadow: 3px 3px 0px blue;
+    }
+        /*----- Declarações Retrato!---------*/
+    @media screen and (orientation:portrait) {
+        
+        body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+        /*----- Declarações Paisagem!--------*/
+
+
+        @media screen and (orientation:landscape){
+            body{
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+}
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Mude a Orientação do Seu Dispositivo</h1>
+</body>
+</html>

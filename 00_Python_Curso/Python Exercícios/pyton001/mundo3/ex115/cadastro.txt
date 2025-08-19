@@ -1,0 +1,9 @@
+Cleiton;33
+Karen;32
+Iolanda;63
+Talita;38
+Giovana;10
+Matheus;14
+Gaby;15
+;0
+Osmair;53

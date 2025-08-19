@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>;
+    <style>
+        h1{
+            background-color: bisque;
+            height: 300px;
+            width: 300px;
+            
+
+            /*border sem shorthand  */
+            border-width: 10px;
+            border-style: solid;
+            border-color: brown;
+            
+            /*Shorthands para border  */
+            
+            border: 10px solid darkgreen;
+
+            /*padding sem shorthand  */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*Shorthands para padding  */
+
+            padding: 10px 10px 10px 10px;
+
+            /*Shorthands para padding se forem iguais  */
+            padding: 10px;
+
+            /*Shorthands para padding se as paralelas iguais (serve tbm para margens e outlines)*/
+
+            padding: 10px 40px;
+            
+            /*Margin sem shorthand  */
+            margin-top: 20px;            
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            /*Shorthands para MArgin  */
+            margin: 20px 10px 40px 20px;
+
+            /*Shorthands para padding se forem iguais  */
+            
+
+            outline-width: 20px;
+            outline-style:dashed;
+            outline-color: blue; /*Tracejado dentro da margem*/
+            
+        }
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixas box level</h1>
+    <p>Parágrafos também são exemplos de box lvl <a href="#">Ancoras(links) são exemplos de inline-lvl </a> <br> Vamos ver como isso finciona!</p>
+</body>
+</html>

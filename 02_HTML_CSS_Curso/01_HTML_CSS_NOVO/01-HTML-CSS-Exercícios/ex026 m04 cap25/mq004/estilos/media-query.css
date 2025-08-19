@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* Todas as Demais Medias*/
+
+/* Typical Device Break Points WC# 2023
+
+Mobile: até 600.
+Mobile: de 600 até 720.
+Tablet: de 720 até 768 
+Laptop: de 768 até 1366 
+High-res laptop or desktop: de 1366 até  1920.
+
+*/
+
+@media print {
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        background-size: cover;
+        font-family: 'Courier New', Courier, monospace;
+        
+        
+    }
+
+    h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    main{
+        background-color: rgba(44, 44, 44, 0.426);
+        border: 2px solid black;
+        width: 50vw;
+    }
+    
+    main #phone{display: none;}
+    main #tablet{display: none;}
+    main #printer{display: block;}
+    main #pc{ display: none;}
+    main #tv{display: none;} 
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) /* Tablet*/ {
+
+    body{
+        
+        background-image: url(../imagens/back-tablet.jpg);
+        background-size: cover;
+
+        
+    }
+
+    main #phone{display: none;}
+    main #tablet{display: block;}
+    main #printer{display: none;}
+    main #pc{ display: none;}
+    main #tv{display: none;}    
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) /* Laptop*/ {
+
+    Body{
+        background-image: url(../imagens/back-pc.jpg);
+        background-size: cover;
+    }
+
+    main #phone{display: none;}
+    main #tablet{display: none;}
+    main #printer{display: none;}
+    main #pc{ display: block;}
+    main #tv{display: none;}      
+
+
+}
+
+@media screen and (min-width: 1366px) /* Desktop e TV*/ {
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+        background-size: cover;
+    }
+
+    main #phone{display: none;}
+    main #tablet{display: none;}
+    main #printer{display: none;}
+    main #pc{ display: none ;}
+    main #tv{display: block;} 
+
+} 
+
+
+
+
+

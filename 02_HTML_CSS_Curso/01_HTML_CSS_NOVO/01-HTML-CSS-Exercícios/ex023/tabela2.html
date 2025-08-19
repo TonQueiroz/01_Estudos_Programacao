@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas Grandes</title>
+    <style>
+
+        :root{
+            --cor1: lightgray;
+
+
+        }
+
+
+        table{
+            border: 3px solid black;
+            border-collapse: collapse;
+            width: 500px;                  
+            text-align: center;
+            /* Cabeçalho  fixo-->*/
+            position: relative;
+        }
+
+            thead>tr>th{
+                position: sticky;
+                top: 0;
+                background-color: blueviolet;
+            }
+            /* <--Cabeçalho  fixo*/
+
+        thead{
+            background-color: var(--cor1);
+            color: white;
+        }
+
+        th{
+            border: 2px solid black;            
+            font-weight: bold;
+            padding: 7px;
+            
+            
+        }
+        td{
+            border: 1px solid black;
+            padding: 7px;    
+        }
+        tfoot{
+            background-color: var(--cor1);
+            color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tbody>tr:nth-child(2n){
+            background-color: lightblue ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+
+    <!-- anatonia de tabelas grandes
+    Table
+        THEAD
+        TBODY
+        TFOOTER
+    -->
+
+    <TABLE>
+        <caption>Teste de tabela propulacional</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição </th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td  class="num">44.420.459</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.05.524</td>
+            </tr>
+
+        </tbody>
+            
+        <tfoot>
+            <th>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"> <strong>000000000</strong>              
+                </td>
+            </th>
+
+        </tfoot>
+
+    </TABLE>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique aperiam quo hic sint, ipsum sapiente minus sunt, aliquam atque delectus, natus illo. Culpa quos optio reprehenderit, dicta perferendis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur nemo nesciunt odit nihil nobis perspiciatis sint, quis vel repudiandae similique consectetur, dolor sed error accusamus voluptas, eius quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, assumenda facere? Fuga perspiciatis ut consequuntur cum a ipsum omnis eligendi distinctio molestias expedita. Eveniet, quos alias recusandae doloremque pariatur eius!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum assumenda laudantium suscipit velit quia consequuntur quos neque dolorem nobis reprehenderit, amet quo, iure voluptates laborum ab? Minus, cupiditate incidunt?</p>
+
+
+
+
+
+
+</body>
+</html>

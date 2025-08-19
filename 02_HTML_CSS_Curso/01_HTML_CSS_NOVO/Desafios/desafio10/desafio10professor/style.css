@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url(arquivosdesafio/fontes/idroid.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+
+:root {
+    --cor0:#97eabb;
+    --cor1:#3BD880;
+    --cor2:#1A5C38;
+    
+
+    --fonte-padrao: arial, verdana, helvetica, Sans-serif;
+    --font-destaque: "Bebas Neue", cursive;
+    --fonte-android: 'android', cursive;
+
+}
+
+*{
+    margin: 0px;
+    padding : 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+
+/* Estilos */
+
+
+body{
+    background-color:var(--cor0);
+
+}
+header{
+    background-image:linear-gradient(0deg, var(--cor2), var(--cor0));
+    text-align: center;
+    
+
+}
+
+header > h1 {
+    font-family: var(--font-destaque);
+    color: white;
+    padding-top:30px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px #000000cc;
+
+    
+}
+
+header > p {
+    color:white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin:auto;
+    padding: 10px;
+    text-shadow: 2px 2px 5px #000000cc;
+
+}
+
+
+nav {
+    padding: 10px;
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    box-shadow: 0px 6px 4px 0px #0b0b0b6e;
+    padding: 10px;
+    
+    
+    
+}
+
+
+
+nav > a {
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+}
+
+nav > a:hover { 
+    background-color: var(--cor1);
+    text-decoration: underline;
+    color: black;
+    border-radius: 5px;
+    transition-duration: .5s;
+
+
+}
+
+
+main h1{
+    font-size: 2em;
+    font-family: var(--fonte-android);
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor1), 10%, rgb(255, 255, 255));
+    text-indent: 10px
+    ;
+}
+
+
+main{
+    background-color: white;
+    font-family: var(--fonte-padrao);
+
+    max-width: 800px;
+    min-width: 320;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 12px 1px;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.3em;
+    font-size: 1em;
+
+}
+
+main strong {
+    color: var(--cor2);
+    font-weight: bolder;
+    
+
+}
+
+main  img{
+    width:100%;
+    margin: auto;
+    
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor2);
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor1)
+
+}
+
+a.externa::after{
+    content:"\1F517"
+}
+
+
+h3{
+    font-family: var(--fonte-android);
+    color: var(--cor2);
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor1), 10%, rgb(255, 255, 255));
+    max-width: 500px;
+    text-indent: 8px;
+  
+}
+
+
+
+
+aside {
+    background-color: var(--cor0);
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black;
+    
+
+
+}
+
+aside > ul{
+    list-style-type: "\2714\00a0";
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px;
+
+}
+
+h4{
+    background-color: var(--cor2);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 2px 0px 2px 10px;
+    
+}
+
+
+aside p {
+    padding: 10px  ;
+}
+
+
+
+footer{
+    background-color: #1A5C38;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-size: .8em;
+            
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* pseudoClasses */
+
+main img.imgpeq{
+    max-width: 350px;
+    margin: auto;
+    display: block    ;
+}
+
+/* PseudoElemrntos*/
+
+footer a:hover{
+    color:   var(--cor0);
+    text-decoration:underline
+
+}
+
+div.video {
+        background-color: #1A5C38;
+        margin: 10px -20px;
+        padding: 20px;
+        padding-bottom: 56.8%;
+        position: relative;
+
+}
+
+div.video > iframe {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    
+}
+
+
+/*
+div.video{
+    margin :10px -20px 10px -20px  ;
+    background-color: var(--cor2);
+    padding: 20px;
+
+    position: relative;
+}
+
+div.video > iframe{
+
+position: absolute;
+}
+
+*/
+
+
+
+
+
+
+
+
+

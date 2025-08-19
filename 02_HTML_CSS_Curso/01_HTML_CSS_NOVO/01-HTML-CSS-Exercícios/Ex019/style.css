@@ -1,0 +1,46 @@
+@charset "utf8";
+body{
+    background-color: aquamarine;
+    font-family: sans-serif;
+
+}
+h1{
+    color: rgb(4, 102, 70)
+}
+
+h1#princ{
+    text-align: center;
+    background-color: black;
+    color: white;
+    }
+
+h1#princ:hover{
+    background-color: rgb(98, 98, 8);
+}
+
+h2{
+    color: blue;
+}
+.basico{
+    color: rgb(104, 147, 104);
+}
+.basico:hover{
+    background-color: black;
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 900;
+    
+}
+
+.avançado {
+    color: rgb(112, 73, 73);
+}
+
+.intermediario {
+    color: rgb(140, 140, 81);
+}
+
+.destaque {
+    background-color: rgba(131, 209, 22, 0.509);
+    
+}

@@ -1,0 +1,213 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'idroid';
+    src: url(arquivosdesafio/fontes/idroid.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+
+/* Estilos */
+*{
+width: 100%;
+}
+
+body{
+    width: 100%;
+    margin: 0px;
+    background-color: #97eabb;
+}
+header{
+    width:100%;
+    height: 100% ;
+    margin: 0px;
+    padding: 10px 0px 0px 10px;
+    
+    background-image: linear-gradient(0deg, #1A5C38,#3BD880 );
+    margin-block-end: 0;
+
+}
+h1{
+    font: normal ;
+    font-weight: bold;
+    font-size: 2.5em;
+    font-family: 'Pathway Gothic One', sans-serif;
+    
+    color: white;
+    text-align: center;
+}
+
+#ptit{
+
+    font: normal ;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+
+nav {
+    width: 43%;
+    height: 100%;
+    margin: auto;
+    padding: 10px 20% 5px 1px;
+    font: normal ;
+    font-weight: lighter;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-block-end: 0;
+    
+}
+.bnav{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-block-end: 0;
+    font-size: 1.25em;
+}
+
+.bnav:hover{
+    color: #3BD880;
+    text-decoration: underline; 
+}
+
+main{
+    width: 60%;
+    margin: auto;
+    padding: 1px 15px;
+    border: 0px;
+    background-color: white;
+    margin-block-start:0px;
+    margin-block-end: 20px;
+    border-radius: 0px 0px 25px 25px;
+    font-family: sans-serif;
+    box-shadow: -1px 0px 8px 1px black;
+}
+
+h2{
+    font-style: normal;
+    font-variant: normal;
+    font-weight:bold;
+    font-size: 1.7em;
+    font-family: 'idroid';
+    color:#1A5C38;
+}
+
+.ppad {
+    font-style:normal ;
+    font-variant: normal;
+    font-weight:normal;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    color:black;
+    
+}
+
+h3{
+    width: 300px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight:bold;
+    font-size: 1.40em;
+    font-family: 'idroid';
+    color:#1a5c38;
+    background-image: linear-gradient(90deg, #34b97066,  #F2F2F2);
+}
+
+.dstk {
+    font-weight:bolder;
+    color: #1A5C38;
+}
+
+.mdia{  
+    width: 80%;
+    display: block;  
+    margin: auto;
+    
+
+    }
+
+#vid {
+    background-color: #1a5c38;
+}
+
+aside {
+    width: 90%;
+    padding: 10px 10px 10px 30px;
+    background-color: #c3f6d9;
+    border-radius: 0px 0px 25px 25px;
+    margin-block: 0;
+    font-family: sans-serif;
+    margin: auto;
+    box-shadow: 2px 2px 8px 1px black;
+}
+
+h4{
+    width: 90%;
+    padding: 10px  10px  10px  30px;    
+    background-color: #50b77f;
+    border-radius: 25px 25px 0px 0px;
+    color: white;
+    margin: auto;
+    margin-block-end: 0;
+    font-family: sans-serif;
+}
+ul{
+    list-style-image: url('http://i.stack.imgur.com/5kI3v.png');
+}
+
+div{ 
+    
+    width:40% ;
+    display: inline-block;
+    
+    
+}
+
+footer{
+    background-color: #1A5C38;
+    font-style: normal;
+    font-variant: normal;
+    font-weight:normal;
+    font-size: 1em;
+    font-family: sans-serif;
+    color:#fbfbfb;
+    text-align: center;
+}
+
+
+.link{
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #3BD880;
+    text-decoration: underline;
+    
+}
+
+.link:visited{
+    color: brown ;
+}
+
+.linkf{
+    color: white ;
+}
+
+
+
+
+
+
+
+
+
