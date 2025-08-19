@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt arial;
+            background-color: rgb(158, 217, 158);
+            color: white;
+            width: 400px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;            
+        }
+    </style>
+</head>
+<body>
+    <div id='area'  onmouseenter="entrar()" onmouseout="sair()">
+        Passe o mouse...
+    </div>
+    <script>
+        var a=document.querySelector('div#area')
+        a.addEventListener('click', clicar) // ao invez de eu colocar na tag div eu coloquei isso aqui
+                                            //assim eu deixo o código mais limpo
+        function clicar(){
+            var x = document.querySelector('div#area')
+            x.innerText = ' clicou'
+            x.style.background = 'black'
+
+        }
+        function entrar(){
+            var x = document.querySelector('div#area')
+            x.innerText = 'entrou'
+            x.style.background = 'blue'
+                       
+        }
+
+        function sair(){
+            var x = document.querySelector('div#area')
+            x.innerText = 'saiu'
+            x.style.background = 'RED'
+            
+
+        }
+
+    </script>
+</body>
+</html>

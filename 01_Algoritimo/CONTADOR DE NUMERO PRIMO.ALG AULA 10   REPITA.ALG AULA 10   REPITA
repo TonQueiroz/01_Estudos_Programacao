@@ -1,0 +1,34 @@
+Algoritmo " NUMERO PRIMO?"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 24/02/2023
+Var
+   // Seção de Declarações das variáveis
+
+   C, N , CONTDIV  : INTEIRO
+
+Inicio
+  C <- 1
+  CONTDIV <- 0
+  ESCREVAL ("DIGITE UM NUMERO")
+  LEIA (N)
+  
+  REPITA
+        SE (N % C =0) ENTÃO
+           CONTDIV <- (CONTDIV+1)
+        FIMSE
+        C <- (C+1)
+  ATE (C > N)
+
+    SE (CONTDIV = 2) OU (CONTDIV = 1) ENTAO
+    
+       ESCREVAL ("ESSE NUMERO TEM " , CONTDIV, " DIVISORES QUE SÃO 1 E ", N," E É CONSIDERADO UM NUMERO PRIMO")
+
+    SENÃO
+       ESCREVAL ("ESSE NUMERO TEM " , CONTDIV, " DIVISORES E NÃO É CONSIDERADO UM NUMERO PRIMO")
+
+    FIMSE
+
+Fimalgoritmo

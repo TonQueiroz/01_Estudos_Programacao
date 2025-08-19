@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        /*Comentário em CSS*/
+
+        body{
+            background-color: oklch(59.502% 0.14664 280.991);
+            color: white;
+            font: normal 20pt arial;
+        } 
+    </style>
+</head>
+<body>
+    <!--Comentário em HTML-->
+    <h1>Olá, Mundo!</h1>
+    
+    <p>
+        Já me livrei da maldição! 
+    </p>
+
+    <script>
+        //Convertendo String para Número
+        var n1 = Number.parseInt(window.prompt('digite um número?')) /*prompt pede algo a ser digitadoe guarda na variavel  
+                                                                        e o NumberparseInt tirna a string em número inteiro .parseFloat em numero real .*/
+        var n2 = Number.parseInt(window.prompt('Digite outro numero?'))
+
+        var n3 = Number(window.prompt('Digite outro numero?')) //Apenas Number serve para Inteiros e Reais
+
+        var s = n1 + n2 + n3
+        
+        window.alert('a soma dos valores é' + s) //concatenação +
+
+        //Converter de Número para String
+
+        n1.toString()
+
+        //ou
+
+        String(n1)
+        
+        //Template String - 
+
+        /* usando template string eu não preciso concatenar posso 
+         apenas usar ${Variavel}para exibir o valor mas a string precisa estar dentro de cráses ` `.*/
+
+        window.alert(`a soma dos valores é ${s}`)
+
+        //Comentário uma linha
+
+        /*Comentario
+        Várias
+        Linhas**/
+        
+    </script>
+</body>
+</html>

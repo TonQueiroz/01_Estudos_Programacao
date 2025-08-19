@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        /*Comentário em CSS*/
+
+        body{
+            background-color: oklch(59.502% 0.14664 280.991);
+            color: white;
+            font: normal 20pt arial;
+        } 
+    </style>
+</head>
+<body>
+    <!--Comentário em HTML-->
+    <h1>Olá, Mundo!</h1>
+    
+    <p>
+        Já me livrei da maldição! 
+    </p>
+
+    <script>
+        // formatando strings
+        //var nome = window.prompt('Qual é seu nome ?')
+
+        //document.writeln(`Seu nome tem ${nome.length} letras. <br>`)/* document.write Escreve no Body do html -
+                                                            //- nome.length conta quantos caracteres a variável tem*/
+
+        //document.write(`Seu nome em Maiusculas ${nome.toUpperCase()}<br>`)
+        //document.write(`Seu Nome em minusculas ${nome.toLowerCase()}<br>`)
+
+        //formatando números
+
+        var n1 = 1545.5
+
+        document.writeln(n1)
+
+            // 2 casas decimais
+        n1.toFixed(2)
+
+        document.writeln(n1.toFixed(2))
+
+            // trocando ponto por vidgula        
+        n1.toFixed(2).replace('.',',')
+
+        document.writeln(n1.toFixed(2).replace('.',','))
+
+            // Formatando para Moeda Real
+
+        
+        document.writeln(n1.toLocaleString('pt-br',{style:'currency', currency:'BRL'}))
+
+        document.writeln(n1.toLocaleString('pt-BR', {style:'currency', currency:'USD'}))
+
+        document.writeln(n1.toLocaleString('pt-BR', {style:'currency', currency:'EUR'}))
+
+        //Comentário uma linha
+
+        /*Comentario
+        Várias
+        Linhas**/
+        
+    </script>
+</body>
+</html>

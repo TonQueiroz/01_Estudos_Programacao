@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <HEader> 
+        <h1>VAMOS CONTAR</h1> 
+    </HEader>
+    <main>
+        <article>
+
+        <Section id="entrada">
+            <p>Entrada: <input type="number" name="entrada" id="entrada"></p>
+            <p>Fim: <input type="number" name="fim" id="fim"></p>  
+            <p>Passo: <input type="number" name="passo" id="passo"> </p>
+            <input type="button" value="contar" id="contar" onclick="fcontagem()">
+
+
+        </Section>
+        ---------------------------------------------------------------------------
+         <Section id="saida">
+            <p id="txtresp"> Preparando contagem</p>
+            <p id="contresp"></p>
+                
+            </Section>
+
+        </article>
+       
+    </main>
+
+    <footer>
+        &copy; Curso JS
+    </footer>
+    
+    
+    <script src="script.js"></script>
+    <script>
+//--------JAVA SCRIPT---------
+        /*var txthorario = document.querySelector('section#txtmutavel')
+
+        txthorario.innerHTML = 'Texto mutável selecionado'
+
+        var imghorario = document.querySelector('section#img')
+
+        imghorario.innerHTML = "IMAGEN SELECIONADA"
+
+        var hour = new Date().getHours()
+        
+        if (hour < 5 && hour >=0){
+            txthorario.innerHTML = 'Boa Madrugada'
+            imghorario.innerHTML = 'IMG BOA MADRUGA'
+
+        } else if( hour<12){ 
+            txthorario.innerHTML ='Bom Dia'
+            imghorario.innerHTML = 'IMG BOm dia'
+
+        } else if (hour<18){
+            txthorario.innerHTML = 'Boa Tarde'
+            imghorario.innerHTML = 'IMG BOA TARDE'
+
+        } else if(hour<=24){
+            txthorario.innerHTML ='Boa noite'
+            imghorario.innerHTML = 'IMG BOA NOITE'
+
+        } else {
+                window.alert('[ ERRO ] Horário Inválido')
+            }*/
+
+    </script>
+
+    
+</body>
+</html>

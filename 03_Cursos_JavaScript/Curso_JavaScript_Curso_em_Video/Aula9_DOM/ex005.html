@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando estudos em DOM</title>
+    <style>
+        body{
+            background-color: rgb(121, 121, 231);
+            color: white;
+            font: normal 18pt Arial;
+            
+        }
+        .teste{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 class = teste>Iniciando estudos em DOM</h1>
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div> 
+    <script>
+        var p1 = window.document.getElementsByTagName("p")[0]
+        var d = document.getElementById('msg') //window. document e document é a mesma coisa, só é uma abstração.
+
+        window.document.write(p1.innerText)
+        d.style.background = 'green'
+        d.innerText = 'modificado com JavaScript no Inner Text'
+
+        //ACESSANDO  ELEMENTOS PELO SELETOR(MAIS RECOMENDADO)
+        var x = window.document.querySelector('h1.teste')
+        document.write(x.innerText) //window. document e document é a mesma coisa, só é uma abstração.
+
+        x.style.background = 'black'
+
+
+    </script>   
+</body>
+</html>

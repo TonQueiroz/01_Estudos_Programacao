@@ -1,0 +1,33 @@
+Algoritmo "Aluno aprovado ou reprovado?"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Curso em video
+// Descrição   : Aluno Aprovadi através de médias! (função)
+// Autor(a)    : TonQueiroz
+// Data atual  : 17/02/2023
+Var
+  NOME : CARACTERE
+  AL, NP, NM, NC, MD : REAL
+
+Inicio
+      Escreval ("BEM VINDO A ESCOLA BRABA")
+
+      Escreval ("ÁREA DE ALUNOS")
+      Escreval ("Qual o seu nome?")
+      Leia (Nome)
+      Escreval ("Em que ano letivo você está?[1 AO 10]")
+      Leia (AL)
+      Escreval ("Qual sua nota em Português?")
+      Leia (NP)
+      Escreval ("Qual sua nota em Matematica?")
+      Leia (NM)
+      Escreval ("Qual a sua nota em ciencias?")
+      Leia (NC)
+
+
+      Se (((NP+NM+NC)/3) >= 7) entao
+         Escreval ("Parabéns ", Nome, " SUA MÉDIA FOI", ((NP+NM+NC)/3)," Você foi aprovado com sucesso no seu ", AL, "º Ano Letivo.")
+      senao
+         Escreval ("Se fudeu, ", Nome, "VOCÊ É MUITO BURRO!TIROU ",((NP+NM+NC)/3)," Vai ter que cursar denovo o ", Al, "º ano e estudar com as criancinhas!")
+      Fimse
+
+Fimalgoritmo

@@ -1,0 +1,17 @@
+.divButton1{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Button1{
+    background-color: rgb(187, 187, 187);
+    padding: 10px;
+    color: rgb(239, 240, 240);
+    width: 200px;
+    font: bold 30px  arial;
+    border-radius: 10px;
+}
+

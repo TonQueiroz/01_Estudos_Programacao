@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+    <h1> Teste de Nacionalidade Brasileira</h1>
+
+    <p>
+        Em que país você nasceu? <br>
+        País <input type="text" id="nac">
+        <input type="button" value="Análise" onclick="análise()">
+        <div>
+            Entao você é :
+            <div id = 'resp'>
+
+            </div>
+                        
+        </div>
+    </p>
+
+    <script>
+        
+        function análise(){
+
+            var País = document.querySelector('input#nac').value.toUpperCase()
+            var resposta = document.querySelector('div#resp') 
+            
+            if( País == 'BRASIL'){                  
+                resposta.innerText = "Brasileiro"
+            }else{                
+                resposta.innerText = 'Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
