@@ -17,3 +17,5 @@ const celular = fabricaFunção('iphone13', 3500)
 
 
 celular.recuperarAvaliações()
+
+console.log(carro1.nome,carro1.preço)

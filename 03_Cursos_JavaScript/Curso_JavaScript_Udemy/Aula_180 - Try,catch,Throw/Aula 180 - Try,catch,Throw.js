@@ -10,9 +10,8 @@ function contarletras(x){
 }
 
 const produto={
-    nom:'Cleiton',
+    nome:'Cleiton',
     idade:33
-
 }
 
 contarletras(produto)
