@@ -6,7 +6,7 @@ let user = [
 userFiltrado= user.reduce(reduzir,10) //reduzir é a função e 10 é o valor inicial
 
 
-function reduzir(acumulador,VALOR , INDICE, ARRAY){ //  VC CONSEGUE PEGAR ESSES 3 PARAMETROS DO ARRAY VALOR INDICE E O ARRAY COMPLETO
+function reduzir(acumulador,VALOR , INDICE, ARRAY){ //  VC CONSEGUE PEGAR ESSES 4 PARAMETROS primeiro o acululador(valor inícial) passado DO ARRAY VALOR INDICE E O ARRAY COMPLETO
     
         return acumulador+VALOR // acumula os valores começando em no valor inicial 10
     }
