@@ -1,4 +1,4 @@
-let num = 2001.55
+let num = 2001.50
 
 let listanumeros = [2,5,77,834,6,2,1,66,13]
 

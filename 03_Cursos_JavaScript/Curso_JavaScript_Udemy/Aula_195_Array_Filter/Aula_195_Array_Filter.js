@@ -10,7 +10,7 @@ userFiltrado= user.filter(filtrar)
 
 function filtrar(VALOR , INDICE, ARRAY){ //  VC CONSEGUE PEGAR ESSES 3 PARAMETROS DO ARRAY VALOR INDICE E O ARRAY COMPLETO
     
-        return VALOR.idade<=18
+        return VALOR.idade<18
     }
         
 

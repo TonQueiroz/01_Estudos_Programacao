@@ -7,9 +7,6 @@ function ValidarDados(d1,d2){
     } else { 
         return true
     }
-
-    
-
 }
 
 
