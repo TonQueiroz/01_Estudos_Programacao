@@ -13,5 +13,5 @@ btn.addEventListener('click', function(){
 })
 
 function getRandonNumber(){
-    return Math.floor(Math.random()*colors.length ); //*colors.length multiplica o número aleatório pelo tamanho do array retoanando um numero aleatório entre 0 ee o tamanho do array //.Floor metodo para pegar apenas o número inteiro
+    return Math.floor(Math.random()*colors.length); //*colors.length multiplica o número aleatório pelo tamanho do array retoanando um numero aleatório entre 0 ee o tamanho do array //.Floor metodo para pegar apenas o número inteiro
 }
