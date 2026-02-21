@@ -3,6 +3,7 @@
     padding: 0px;
     
 }
+
 body{
     margin: 00px 00px;
     font-family: "Nunito", sans-serif;
@@ -10,8 +11,6 @@ body{
     font-weight: 000;
     font-style: normal;
 }
-
-
 
 nav{
     background: linear-gradient(180deg, #a0a0a18f, #51515200);
@@ -48,7 +47,6 @@ main{
    align-items: center;
    justify-content: center;
 }
-
 
 .container{    
     
@@ -104,13 +102,3 @@ button:hover {
 button:active {
   transform: scale(0.9);
 }
-
-
-
-
-
-
-
-
-
-
