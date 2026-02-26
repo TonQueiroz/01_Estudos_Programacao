@@ -9,12 +9,12 @@ digita.addEventListener('keydown', function(){
 
 //Quando Você solta a tecla pressionada
 digita.addEventListener('keyup', function(){
-    texto.textContent = 'Tecla solta'
+    texto.textContent = 'Tecla solta- KEEYUP'
 })
 
 //só com teclas que tem caracteres QUANDO INSERE CARACTERES NÃO FUNCIONA PRA CSHIFT OU SETAS
 //QUANDO VOCÊ SEGURA A TECLA EXECUTA A FUNÇÃO UMA VEZ
 digita.addEventListener('keypress', function(){
-    texto.textContent = 'Tecla pressionada de caractere'
+    texto.textContent = 'Tecla pressionada de caractere - KEYPRESS'
 })
 
